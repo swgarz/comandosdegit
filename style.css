@@ -1,3 +1,18 @@
 h1{
     background: #89c9b8;
+    border: 1px solid blueviolet;
+}
+h2{
+    background: blueviolet;
+    padding: 3px;
+}
+.cabecera{
+    border: 2px solid blueviolet;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+body{
+    text-align: center;
 }
