@@ -49,3 +49,14 @@
   git merge (ramasecundaria) -> Tienes que estar en master y hacer git merge para traerte los cambios a master de otra rama (branch) si tienes conflictos los arreglas yendote al editor de texto y seleccionado lo que mejor te convenga, despues haces git add. después git commit y no es necesario hacer git merge de nuevo el merge estará listo.
   
   
+## generar llaves, pública y privada para conectarse por ssh a github
+    ssh-keygen -t rsa -b 4096 -C 
+    
+   le das enter, despues entender otra vez, hasta que te genere las llaves. Deja las llaves por default en la carpeta de tu usuario y en .ssh
+   
+   eval $(ssh-agent -s) ->para checar que el proceso de ssh está corriendo
+   
+   #### agregar email a la carpeta ssh para agregar identidad
+   
+   ssh-add /home/usuario/.ssh/id_rsa
+   
