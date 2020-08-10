@@ -46,4 +46,6 @@
   
   git checkout (commit) (archivo) -> cambias de rama solo con un achivo especifico, despues git add . y despues commit
   
+  git merge (ramasecundaria) -> Tienes que estar en master y hacer git merge para traerte los cambios a master de otra rama (branch) si tienes conflictos los arreglas yendote al editor de texto y seleccionado lo que mejor te convenga, despues haces git add. después git commit y no es necesario hacer git merge de nuevo el merge estará listo.
+  
   
