@@ -38,4 +38,12 @@
   
   git rm --cached (tu archivo.txt) - quita el cambio del stage y ahora con git status lo verás en verde.
   
+  git diff (primer commit que se quiere comparar) (segundo commit que se quiere comparar), los commits podemos visualizarlos con git log, diff si utiliza para    comparar cambios. 
+  
+  git diff -> compara lo del stage y lo untracked, que no se agregó con add.
+  
+  git reset (commit al que queremos regresar) --hard (este comando nos regresa al commit que queramos pero BORRA TODO, PRECAUCION si es lo que quieres) 'git log para ver los commits a donde queremos regresar'
+  
+  git checkout (commit) (archivo) -> cambias de rama solo con un achivo especifico, despues git add . y despues commit
+  
   
