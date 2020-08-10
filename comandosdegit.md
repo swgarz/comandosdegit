@@ -60,3 +60,9 @@
    
    ssh-add /home/usuario/.ssh/id_rsa
    
+   #### cambiar de https a ssh
+   
+   git remote -v -> para ver que los dos origins están con https
+   
+   git remote set-url origin git@github.com:(copialo de clone en tu repositorio)
+   
