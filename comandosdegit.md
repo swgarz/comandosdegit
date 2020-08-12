@@ -48,6 +48,23 @@
   
   git merge (ramasecundaria) -> Tienes que estar en master y hacer git merge para traerte los cambios a master de otra rama (branch) si tienes conflictos los arreglas yendote al editor de texto y seleccionado lo que mejor te convenga, despues haces git add. después git commit y no es necesario hacer git merge de nuevo el merge estará listo.
   
+  git log --graph -> te muestra las ramas (branch) graficamente
+  
+  git log --all --graph --decorate --oneline -> muestra grafica de todos los logs
+  
+  git show-branch --all-> muestra todas las ramas y hacia donde apuntan
+  
+  #### los tags son útiles en github para ver versiones y regresar al código
+  
+  git tag -a (tag que aparecerá en github) -m "mensaje" (hash) -> después hacer un pull y enseguida git push origin master --tags
+  
+  git tag -d (nombre del tag) -> borrarás el tag
+  
+  git push origin :refs/tags/nombredetagborradoenlocal -> borra el tag en github
+  
+  #### crear un alias para no escribir comando tan largo
+  alias nombrequequieres = git log --all --graph --decorate --oneline -> podría ser cualquier otro comando
+  
   
 ## generar llaves, pública y privada para conectarse por ssh a github
     ssh-keygen -t rsa -b 4096 -C 
