@@ -83,3 +83,7 @@
    
    git remote set-url origin git@github.com:(copialo de clone en tu repositorio)
    
+   #### hacer un pull request a un proyecto open source
+   
+   debes hacer un fork del proyecto en donde quieres contribuir (proyecto open source), ahora realizas tus cambios en tu repositorio, el fork que hiciste, github    entiende que ese proyecto está forkeado asi que una ves que trabajaste en tus cambios, haces commit y lo empujas hacia tu repositorio (add,commit,push) cuando    todo esté listo, harás un pull request desde tu fork, listo! solo debes esperar que lo acepten o algun comentario para feedback del proyecto.
+   
