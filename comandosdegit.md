@@ -4,6 +4,8 @@
 
 ## Pasos para iniciar un proyecto y tu primer commit
 
+  commit == hash
+
   git init (repositorio local, laptop)
   
   git add (archivo.txt o punto para agregar todos los archivos)
@@ -44,7 +46,7 @@
   
   git reset (commit al que queremos regresar) --hard (este comando nos regresa al commit que queramos pero BORRA TODO, PRECAUCION si es lo que quieres) 'git log para ver los commits a donde queremos regresar'
   
-  git checkout (commit) (archivo) -> cambias de rama solo con un achivo especifico, despues git add . y despues commit
+  git checkout <commit(hash)> (archivo) -> cambias de rama solo con un achivo especifico, despues git add . y despues commit
   
   git merge (ramasecundaria) -> Tienes que estar en master y hacer git merge para traerte los cambios a master de otra rama (branch) si tienes conflictos los arreglas yendote al editor de texto y seleccionado lo que mejor te convenga, despues haces git add. después git commit y no es necesario hacer git merge de nuevo el merge estará listo.
   
@@ -53,6 +55,34 @@
   git log --all --graph --decorate --oneline -> muestra grafica de todos los logs
   
   git show-branch --all-> muestra todas las ramas y hacia donde apuntan
+  
+  git branch <nombredelaramanueva> -> crea na nueva rama
+    
+   git branch -r -> muestra las ramas remotas (github)
+   
+   git branch -a -> ramas locales y ramas remotas (todas las ramas)
+  
+  git clean --dry-clean-> simula los cambios que se harán de copias de archvos que no se desean ya en el proyecto. archivos repetidos
+  
+  git clean -f -> quita esos cambios simulados.
+  
+  git cherry-pick <commit(hash)>  -> se trae commits viejos de otras ramas estando en master
+    
+   git commit --amend -> pega los cambios hechos al commit anterior , hay que hacer un git add antes de este comando.
+   
+   git reflog -> aparece hash, los cambios de cabecera, aparece toda la historia
+   
+   git reset --HARD <commit(hash)== HashDelHEAD>
+   
+   git grep -n <palabra> ->te arroja en donde se encuentra esa palabra en todos los archivos del proyecto
+    
+   git shortlog -sn -> muestra los commits que ha hecho cierta persona
+   
+   git shortlog -sn --all -> muestra los commits aun borrados
+   
+   git blame <archivo> -> nos mostrará quien hizo el cambio en cada linea del archivo
+    
+   git blame <archivo> -L35,53 -> el primer parámetro(35) es la linea del codigo de donde queremos que analice quien hizo los cambios y es segundo parámetro es         hasta donde queremos ver quien hizo los cambios en el archivo.
   
   #### los tags son útiles en github para ver versiones y regresar al código
   
